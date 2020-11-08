@@ -1,0 +1,101 @@
+{
+  "name": "gatsby.ts.template",
+  "version": "1.1.0",
+  "description": "Starter for Gatsby site. TypeScript, Styled-components, Jest, TS types generation",
+  "author": "Pavel Klochkov, paul.klochkov@gmail.com",
+  "scripts": {
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "jest --env=jsdom --ci --verbose --passWithNoTests",
+    "dev": "gatsby clean && gatsby develop",
+    "pretty": "prettier --check \"./**/*.{ts,tsx,js,jsx,json,md}\"",
+    "check-ts": "tsc",
+    "lint": "eslint \"./src/**/*.{ts,tsx,js}\" --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn check-ts && yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,csgis,md}": [
+      "prettier --config ./.prettierrc --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint -c ./.eslintrc.js --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webtime-studio/gatsby-starter.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webtime-studio/gatsby-starter/issues"
+  },
+  "homepage": "https://github.com/webtime-studio/gatsby-starter#readme",
+  "dependencies": {
+    "gatsby": "2.25.3",
+    "gatsby-parallel-runner": "^1.3.0",
+    "gatsby-plugin-codegen": "^1.2.14",
+    "gatsby-plugin-manifest": "^2.5.2",
+    "gatsby-plugin-preconnect": "^1.1.54",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-robots-txt": "^1.5.3",
+    "gatsby-plugin-sharp": "^2.7.1",
+    "gatsby-plugin-sitemap": "^2.5.1",
+    "gatsby-plugin-styled-components": "^3.3.14",
+    "gatsby-plugin-tsconfig-paths": "^1.0.2",
+    "gatsby-plugin-typegen": "^2.2.1",
+    "gatsby-plugin-typescript": "^2.5.0",
+    "gatsby-plugin-typescript-checker": "^1.1.1",
+    "gatsby-source-filesystem": "^2.4.2",
+    "gatsby-source-graphql": "^2.7.7",
+    "gatsby-transformer-remark": "^2.9.2",
+    "gatsby-transformer-sharp": "^2.5.21",
+    "identity-obj-proxy": "^3.0.0",
+    "lazysizes": "^5.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-test-renderer": "^17.0.1",
+    "resize-observer-polyfill": "^1.5.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/graphql": "^14.5.0",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-test-renderer": "^16.9.3",
+    "@types/styled-components": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-styled-components": "^1.11.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-react-parser": "^0.14.1",
+    "husky": "^4.3.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "ts-graphql-plugin": "^2.0.2",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.0.5"
+  },
+  "resolutions": {
+    "gatsby-source-graphql-universal": "3.3.0",
+    "graphql": "^14.5.0"
+  }
+}

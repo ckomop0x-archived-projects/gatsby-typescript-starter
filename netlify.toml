@@ -1,0 +1,8 @@
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+[build]
+publish = "public"
+
+[[plugins]]
+package = "netlify-plugin-gatsby-cache"
