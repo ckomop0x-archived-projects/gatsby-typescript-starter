@@ -22,7 +22,6 @@
 
 ```
 .github/                - github actions
-.netlify/               - Netlify files
 .vscode/                - VSCode files and recommended extensions
 __mocks__/              - Jest mocks
 src/                    – project files
