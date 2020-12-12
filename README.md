@@ -1,13 +1,61 @@
 # Welcome to Gatsby TypeScript template 👋
 
 ![Version](https://img.shields.io/badge/version-1.1.0-blue.svg?cacheSeconds=2592000)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/webtime-studio/gatsby-starter#readme)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/webtime-studio/gatsby-typescript-starter#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/webtime-studio/gatsby-starter/graphs/commit-activity)
 [![Twitter: webtime-studio](https://img.shields.io/twitter/follow/webtime-studio.svg?style=social)](https://twitter.com/webtimestudio)
 
 > Starter for Gatsby site. TypeScript, Styled-components, Jest, TS types generation
 
-### 🏠 [Homepage](https://github.com/webtime-studio/gatsby-starter#readme)
+### 🏠 [Homepage](https://github.com/webtime-studio/gatsby-typescript-starter#readme)
+
+## Technologies
+
+- Gatsby
+- TypeScript
+- Styled Components
+- GraphQL
+- Prettier
+- Eslint
+
+## Files structure
+
+```
+.github/                - github actions
+.vscode/                - VSCode files and recommended extensions
+__mocks__/              - Jest mocks
+src/                    – project files
+static/                 – assets and static files
+types                   - custom TypeScript types
+.editorconfig           - base project formatting
+.eslitrc.js             - JS liner setting
+.gitignore              - files and folders ignored by Git
+.graphqlconfig          - graphql schema config for WebStorm
+.prettierignore         - files and folders ignored by prettier
+.prettierrc             - prettier settings
+apollo.config.js        - Apollo GraphQL cofig
+gatsby-browser.js       - Gatsby browser settings
+gatsby-config.js        - Gatsby config
+index.js                - hm why do we need this file?
+jest.config.js          - Jest config
+jest-preprocess.js      - Jest babel-config
+loadershim.js           - anther Jest config
+netlify.toml            - Netlify settings
+package.json            - project script and dependencies
+README.md               - project description
+site-config.js          - website base settings
+tsconfig.json           - main TypeScript config
+tsconfig.test.json      - TypeScript for tests
+yarn.lock               - installed dependencies
+```
+
+## Under the hood
+
+- Webpack
+- SCSS
+- JS с Babel
+- Stylelint, Eslint
+- Prettier
 
 ## Install
 
@@ -50,8 +98,4 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2020 [Pavel Klochkov, paul.klochkov@gmail.com](https://github.com/webtime-studio).
 
-This project is [MIT](https://github.com/webtime-studio/gatsby-starter/blob/master/LICENSE) licensed.
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+This project is [MIT](https://github.com/webtime-studio/gatsby-typescript-starter/blob/master/LICENSE) licensed.
